@@ -10,14 +10,14 @@
     "build": "rm -rf ./dist && webpack --mode production"
   },
   "devDependencies": {
-    "esbuild-loader": "^2.18.0",
-    "fork-ts-checker-webpack-plugin": "^7.2.7",
+    "esbuild-loader": "^2.19.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.11",
     "html-webpack-plugin": "^5.5.0",
     "ts-node": "^10.8.1",
-    "typescript": "^4.6.3",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1"
+    "typescript": "^4.7.3",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
     "jsroot": "^7.1.0"
