@@ -2,8 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "sourceMap": true,
-    "strict": true,
-    "noImplicitAny": true,
+    "strict": false,
     "module": "commonjs",
     "moduleResolution": "node",
     "target": "esnext",
