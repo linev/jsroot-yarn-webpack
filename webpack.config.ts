@@ -13,7 +13,7 @@ const config: Configuration = {
     filename: 'bundle.js',
   },
   experiments: {
-    topLevelAwait: true
+    topLevelAwait: false
   },
   resolve: {
     extensions: ['.ts', '.js', '.json', '.mjs'],
