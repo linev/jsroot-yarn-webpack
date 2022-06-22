@@ -20,6 +20,6 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
-    "jsroot": "^7.1.0"
+    "jsroot": "github:root-project/jsroot"
   }
 }
