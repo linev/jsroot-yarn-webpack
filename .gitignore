@@ -61,3 +61,7 @@ src/**/*.map
 *.swp
 *.iml
 .vscode/
+
+# eclipse
+.project
+.settings
