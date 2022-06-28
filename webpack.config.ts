@@ -1,16 +1,21 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
-import { Configuration, DefinePlugin } from 'webpack';
+import { Configuration } from 'webpack';
 
 const config: Configuration = {
-  mode: 'development',
+  mode: 'production',
   context: path.resolve(__dirname, './'),
   entry: path.resolve(__dirname, './src/index.ts'),
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
   },
   experiments: {
     topLevelAwait: false
@@ -59,11 +64,7 @@ const config: Configuration = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './public/index.html'),
     }),
-    new ForkTsCheckerWebpackPlugin(),
-    new DefinePlugin({
-       "process.env": {
-          APP_ENV: JSON.stringify('browser')
-      }})
+    new ForkTsCheckerWebpackPlugin()
   ],
 };
 
